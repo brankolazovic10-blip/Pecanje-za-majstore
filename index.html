@@ -2,38 +2,65 @@
 <html lang="sr">
 <head>
 <meta charset="UTF-8">
-<title>Partnerski Portal</title>
+<title>Pecanje za Majstore</title>
 <style>
-body{
-  background:#0f172a;
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#111;
   color:white;
-  font-family:Arial;
-  text-align:center;
 }
-.box{
-  max-width:900px;
-  margin:50px auto;
+
+.container {
+  display: flex; /* deli glavni sadržaj i sidebar */
+  max-width:1200px;
+  margin: 0 auto;
+  padding:20px;
 }
-img{
+
+.main-content {
+  flex: 1; /* glavni sadržaj zauzima preostali prostor */
+  padding-right:20px;
+}
+
+.sidebar {
+  width: 300px; /* širina sidebar-a sa banerom */
+}
+
+.sidebar img {
   max-width:100%;
   border-radius:12px;
+  box-shadow:0 0 15px black;
+}
+h1 {
+  color:#38bdf8;
+}
+p {
+  line-height:1.5em;
 }
 </style>
 </head>
-
 <body>
 
-<div class="box">
+<div class="container">
 
-<h1>Partnerski Gaming Portal</h1>
+  <!-- Glavni sadržaj -->
+  <div class="main-content">
+    <h1>Pecanje za Majstore</h1>
+    <p>Dobrodošli na naš portal! Ovde možete pronaći sve o pecanju, trikovima, opremi i savetima za majstore ribolova.</p>
+    <p>Glavni sadržaj sajta ide ovde: članci, tutorijali i najnovije vesti o pecanju.</p>
+    <p>Ovo je prostor gde možete prikazati tekstualni sadržaj sajta, slike i linkove ka drugim sekcijama.</p>
+  </div>
 
-<a href="https://srbgames.byethost31.com/" target="_blank">
-<img src="baner.png">
-</a>
-
-<p>Klikni na baner</p>
+  <!-- Sidebar sa banerom -->
+  <div class="sidebar">
+    <a href="https://srbgames.byethost31.com/" target="_blank">
+      <img src="baner.png" alt="SRB Games">
+    </a>
+  </div>
 
 </div>
 
 </body>
 </html>
+
